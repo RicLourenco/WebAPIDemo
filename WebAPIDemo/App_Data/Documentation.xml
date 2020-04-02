@@ -481,6 +481,12 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
+        <member name="M:WebAPIDemo.Controllers.EmpregadoController.#ctor">
+            <summary>
+            SÓ PARA DEMONSTRAÇÂO
+            Construtor do EmpregadoController com uma lista já lá dentro
+            </summary>
+        </member>
         <member name="M:WebAPIDemo.Controllers.EmpregadoController.Get">
             <summary>
             Dados completos de todos os empregados
@@ -506,11 +512,45 @@
             </summary>
             <param name="valor">empregado</param>
         </member>
-        <member name="M:WebAPIDemo.Controllers.EmpregadoController.Delete(System.Int32)">
+        <member name="T:WebAPIDemo.Models.Empregado">
             <summary>
-            Apaga empregado consoante o id
+            Objeto Empregado que tem um ID, Nome e Apelido
             </summary>
-            <param name="id">ID</param>
+        </member>
+        <member name="P:WebAPIDemo.Models.Empregado.ID">
+            <summary>
+            ID do empregado
+            </summary>
+        </member>
+        <member name="P:WebAPIDemo.Models.Empregado.Nome">
+            <summary>
+            Nome do empregado
+            </summary>
+        </member>
+        <member name="P:WebAPIDemo.Models.Empregado.Apelido">
+            <summary>
+            Apelido do empregado
+            </summary>
+        </member>
+        <member name="T:WebAPIDemo.Models.Livro">
+            <summary>
+            Objeto Livro que tem um ID, Título e Autor
+            </summary>
+        </member>
+        <member name="P:WebAPIDemo.Models.Livro.ID">
+            <summary>
+            ID do livro
+            </summary>
+        </member>
+        <member name="P:WebAPIDemo.Models.Livro.Titulo">
+            <summary>
+            Título do livro
+            </summary>
+        </member>
+        <member name="P:WebAPIDemo.Models.Livro.Autor">
+            <summary>
+            Autor do livro
+            </summary>
         </member>
     </members>
 </doc>

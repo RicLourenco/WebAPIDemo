@@ -1,17 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
-using WebAPIDemo.Models;
-
-namespace WebAPIDemo.Controllers
+﻿namespace WebAPIDemo.Controllers
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Net;
+    using System.Net.Http;
+    using System.Web.Http;
+    using Models;
+
+    /// <summary>
+    /// Controlador dos funcionarios
+    /// </summary>
     public class EmpregadoController : ApiController
     {
         List<Empregado> Funcionarios;
 
+        /// <summary>
+        /// SÓ PARA DEMONSTRAÇÂO
+        /// Construtor do EmpregadoController com uma lista já lá dentro
+        /// </summary>
         public EmpregadoController()
         {
             Funcionarios = new List<Empregado>
@@ -69,16 +76,6 @@ namespace WebAPIDemo.Controllers
         public void Post([FromBody]Empregado valor)
         {
             Funcionarios.Add(valor);
-        }
-
-        // DELETE: api/Empregado/5
-        /// <summary>
-        /// Apaga empregado consoante o id
-        /// </summary>
-        /// <param name="id">ID</param>
-        public void Delete(int id)
-        {
-
         }
     }
 }
