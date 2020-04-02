@@ -481,6 +481,17 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
+        <member name="M:WebAPIDemo.Controllers.CategoriasController.Get">
+            <summary>
+            Lista de todas as categorias na tabela "categorias" da base de dados "DemoVideoClube"
+            </summary>
+            <returns>Lista com todas as categorias</returns>
+        </member>
+        <member name="T:WebAPIDemo.Controllers.EmpregadoController">
+            <summary>
+            Controlador dos funcionarios
+            </summary>
+        </member>
         <member name="M:WebAPIDemo.Controllers.EmpregadoController.#ctor">
             <summary>
             SÓ PARA DEMONSTRAÇÂO
@@ -511,6 +522,60 @@
             Registo de novo empregado
             </summary>
             <param name="valor">empregado</param>
+        </member>
+        <member name="T:WebAPIDemo.Controllers.LivrosController">
+            <summary>
+            Controlador dos livros
+            </summary>
+        </member>
+        <member name="M:WebAPIDemo.Controllers.LivrosController.Get">
+            <summary>
+            Informação de todos os livros
+            </summary>
+            <returns>Lista de todos os livros</returns>
+        </member>
+        <member name="M:WebAPIDemo.Controllers.LivrosController.Get(System.Int32)">
+            <summary>
+            Informações do livro consoante o ID
+            </summary>
+            <param name="id"></param>
+            <returns>Resposta consoante se o livro foi encontrado pelo ID ou não</returns>
+        </member>
+        <member name="M:WebAPIDemo.Controllers.LivrosController.Post(WebAPIDemo.Models.Livro)">
+            <summary>
+            Adicionar um livro
+            </summary>
+            <param name="obj"></param>
+            <returns>Resposta consoante se o livro foi encontrado pelo ID ou não</returns>
+        </member>
+        <member name="M:WebAPIDemo.Controllers.LivrosController.Put(WebAPIDemo.Models.Livro)">
+            <summary>
+            Alterar um livro
+            </summary>
+            <param name="obj"></param>
+            <returns>Resposta consoante se o livro foi encontrado pelo ID ou não</returns>
+        </member>
+        <member name="M:WebAPIDemo.Controllers.LivrosController.Delete(System.Int32)">
+            <summary>
+            Apaga um livro
+            </summary>
+            <param name="id"></param>
+            <returns>Resposta consoante se o livro foi encontrado pelo ID ou não</returns>
+        </member>
+        <member name="T:WebAPIDemo.Models.Biblioteca">
+            <summary>
+            Classe que contém a lista onde estão guardados todos os livros
+            </summary>
+        </member>
+        <member name="P:WebAPIDemo.Models.Biblioteca.Livros">
+            <summary>
+            Propriedade que gera os livros caso ainda não existam, e os mostra caso já existam
+            </summary>
+        </member>
+        <member name="M:WebAPIDemo.Models.Biblioteca.GerarLivros">
+            <summary>
+            Método que gera os livros caso não existam
+            </summary>
         </member>
         <member name="T:WebAPIDemo.Models.Empregado">
             <summary>
