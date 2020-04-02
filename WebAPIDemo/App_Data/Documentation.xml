@@ -4,6 +4,45 @@
         <name>WebAPIDemo</name>
     </assembly>
     <members>
+        <member name="T:WebAPIDemo.App_Start.FilmesController">
+            <summary>
+            Controlador dos filmes
+            </summary>
+        </member>
+        <member name="M:WebAPIDemo.App_Start.FilmesController.Get">
+            <summary>
+            Lista de todos os filmes na tabela "filmes"
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPIDemo.App_Start.FilmesController.Get(System.Int32)">
+            <summary>
+            Retorna um filme consoante o ID indicado
+            </summary>
+            <param name="id"></param>
+            <returns>Filme</returns>
+        </member>
+        <member name="M:WebAPIDemo.App_Start.FilmesController.Post(WebAPIDemo.filme)">
+            <summary>
+            Insere um filme novo na tabela "filmes"
+            </summary>
+            <param name="novoFilme"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPIDemo.App_Start.FilmesController.Put(WebAPIDemo.filme)">
+            <summary>
+            Atualiza um filme consoante o ID indicado
+            </summary>
+            <param name="filmeAlterado"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPIDemo.App_Start.FilmesController.Delete(System.Int32)">
+            <summary>
+            Apaga um filme consoante o ID indicado da tabela "filmes"
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="M:WebAPIDemo.Areas.HelpPage.ApiDescriptionExtensions.GetFriendlyId(System.Web.Http.Description.ApiDescription)">
             <summary>
             Generates an URI-friendly ID for the <see cref="T:System.Web.Http.Description.ApiDescription"/>. E.g. "Get-Values-id_name" instead of "GetValues/{id}?name={name}"
@@ -481,11 +520,44 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
+        <member name="T:WebAPIDemo.Controllers.CategoriasController">
+            <summary>
+            Controlador das categorias
+            </summary>
+        </member>
         <member name="M:WebAPIDemo.Controllers.CategoriasController.Get">
             <summary>
-            Lista de todas as categorias na tabela "categorias" da base de dados "DemoVideoClube"
+            Lista de todas as categorias na tabela "categorias"
             </summary>
             <returns>Lista com todas as categorias</returns>
+        </member>
+        <member name="M:WebAPIDemo.Controllers.CategoriasController.Get(System.String)">
+            <summary>
+            Categoria consoante a sigla indicada da tabela "categorias"
+            </summary>
+            <param name="sigla"></param>
+            <returns>Categoria consoante a sigla indicada</returns>
+        </member>
+        <member name="M:WebAPIDemo.Controllers.CategoriasController.Post(WebAPIDemo.categoria)">
+            <summary>
+            Insere uma nova categoria na tabela "categorias"
+            </summary>
+            <param name="novaCategoria"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebAPIDemo.Controllers.CategoriasController.Put(WebAPIDemo.categoria)">
+            <summary>
+            Atualiza uma categoria da tabela "categorias"
+            </summary>
+            <param name="novaCategoria"></param>
+            <returns>Mensagem de resposta se sucedeu no insert ou não</returns>
+        </member>
+        <member name="M:WebAPIDemo.Controllers.CategoriasController.Delete(System.String)">
+            <summary>
+            Apaga a categoria com a sigla indicada da tabela "categorias"
+            </summary>
+            <param name="sigla"></param>
+            <returns></returns>
         </member>
         <member name="T:WebAPIDemo.Controllers.EmpregadoController">
             <summary>

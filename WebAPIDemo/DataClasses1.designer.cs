@@ -297,6 +297,7 @@ namespace WebAPIDemo
 		}
 		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="categoria_filme", Storage="_categoria1", ThisKey="categoria", OtherKey="sigla", IsForeignKey=true)]
+		[JsonIgnore]
 		public categoria categoria1
 		{
 			get
